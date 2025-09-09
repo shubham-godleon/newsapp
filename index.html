@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uttarakhand Awaaz</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="left-header">
+        <button id="menuBtn">☰</button>
+        <h1>Uttarakhand Awaaz</h1>
+      </div>
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://x.com/ndtv" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="https://www.youtube.com/@ndtvindia"
+          target="_blank"
+          aria-label="Youtube"
+        >
+          <i class="fab fa-youtube"></i>
+        </a>
+        <a href="#" id="whatsappShare" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="container">
+      <nav class="sidebar" id="sidebar">
+        <h3>Categories</h3>
+        <ul>
+          <li onclick="filterNews('all')">सभी</li>
+          <li onclick="filterNews('national')">राष्ट्रीय</li>
+          <li onclick="filterNews('international')">अंतरराष्ट्रीय</li>
+          <li onclick="filterNews('sports')">खेल</li>
+          <li onclick="filterNews('education')">शिक्षा</li>
+        </ul>
+      </nav>
+
+      <main class="content" id="newsContent">
+        <!-- Articles will be added dynamically -->
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
